@@ -4,8 +4,8 @@ import Logo from '../image/Bitmap.png';
 function Header() {
   return (
     <div>
-      <div className="bg-white">
-        <div className="px-10 py-5 sm:px-10 sm:py-5 md:px-64">
+      <div className="bg-[#FFFFFF] w-full absolute">
+        <div className="px-10 py-7 sm:px-10 sm:py-5 md:px-14 lg:px-[213px]">
           <div className="flex ">
             <img className="h-12 w-12 sm:h-16 sm:w-16" src={Logo} alt="" />
             <div className="flex flex-col ml-5">
