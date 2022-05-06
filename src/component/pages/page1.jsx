@@ -24,7 +24,7 @@ function PageOne() {
         />
 
         <img
-          className="hidden w-full h-[610px] -my-28 mx-0 md:block"
+          className="hidden w-full h-[610px] xl:h-[695px] -my-28 mx-0 md:block"
           src={BlackMed}
           alt=""
         />
@@ -36,23 +36,23 @@ function PageOne() {
         />
 
         <img
-          className="invisible md:visible md:w-[132px] md:h-[132px] absolute top-[320px] lg:left-[33%]"
+          className="invisible md:visible md:w-[132px] md:h-[132px] absolute top-[320px] lg:left-[33%] xl:left-[37%]"
           src={MidOval}
           alt=""
         />
 
         <div className="flex flex-wrap">
-          <div className="absolute top-[150px] md:top-[180px] left-32 sm:left-[27%] lg:left-[27%]">
+          <div className="absolute  mx-auto top-[150px] md:top-[180px] left-32 sm:left-[27%] lg:left-[27%] xl:left-[33%]">
             <h1 className="top-[134px] text-[52px] md:text-[62px] md:w-[721px] font-sans leading-tight text-white font-bold md:tracking-normal">
               WEEKEND
               <span className="font-bold block md:inline"> FROM HOME </span>
             </h1>
-            <h4 className="text-white text-[18px] md:text-xl font-semibold flex justify-center pt-1 md:leading-tight md:tracking-wide">
+            <h4 className="italic text-white text-[18px] md:text-xl font-semibold flex justify-center pt-1 md:leading-tight md:tracking-wide">
               Stay active with a litte workout
             </h4>
             <div className="hidden md:block">
               <img
-                className="w-[266px] h-[327px] mx-[89%] my-10"
+                className="w-[266px] h-[327px] mx-[89%] xl:mx-[112%] my-10"
                 src={Bean}
                 alt=""
               />
