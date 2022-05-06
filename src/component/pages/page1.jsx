@@ -36,13 +36,13 @@ function PageOne() {
         />
 
         <img
-          className="invisible md:visible md:w-[132px] md:h-[132px] absolute top-[320px]  md:left-[24%] lg:left-[33%] xl:left-[33%]"
+          className="invisible md:visible md:w-[132px] md:h-[132px] absolute top-[320px]  md:left-[24%] lg:left-[33%] xl:left-[33%] 2xl:left-[39%]"
           src={MidOval}
           alt=""
         />
 
         <div className="flex flex-wrap">
-          <div className="absolute  mx-auto top-[150px] md:top-[180px] left-32 sm:left-[27%] md:left-[10%] lg:left-[27%] xl:left-[27%]">
+          <div className="absolute  mx-auto top-[150px] md:top-[180px] left-32 sm:left-[27%] md:left-[10%] lg:left-[27%] xl:left-[27%] 2xl:left-[35%]">
             <h1 className="top-[134px] text-[52px] md:text-[62px] md:w-[721px] font-sans leading-tight text-white font-bold md:tracking-normal">
               WEEKEND
               <span className="font-bold block md:inline"> FROM HOME </span>
