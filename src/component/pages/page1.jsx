@@ -36,13 +36,13 @@ function PageOne() {
         />
 
         <img
-          className="invisible md:visible md:w-[132px] md:h-[132px] absolute top-[320px] lg:left-[33%] xl:left-[37%]"
+          className="invisible md:visible md:w-[132px] md:h-[132px] absolute top-[320px]  md:left-[24%] lg:left-[33%] xl:left-[33%]"
           src={MidOval}
           alt=""
         />
 
         <div className="flex flex-wrap">
-          <div className="absolute  mx-auto top-[150px] md:top-[180px] left-32 sm:left-[27%] lg:left-[27%] xl:left-[33%]">
+          <div className="absolute  mx-auto top-[150px] md:top-[180px] left-32 sm:left-[27%] md:left-[10%] lg:left-[27%] xl:left-[27%]">
             <h1 className="top-[134px] text-[52px] md:text-[62px] md:w-[721px] font-sans leading-tight text-white font-bold md:tracking-normal">
               WEEKEND
               <span className="font-bold block md:inline"> FROM HOME </span>
@@ -52,7 +52,7 @@ function PageOne() {
             </h4>
             <div className="hidden md:block">
               <img
-                className="w-[266px] h-[327px] mx-[89%] xl:mx-[112%] my-10"
+                className="w-[266px] h-[327px] mx-[80%] md:mx-[60%] lg:mx-[70%] xl:mx-[90%] my-10"
                 src={Bean}
                 alt=""
               />
