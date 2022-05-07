@@ -6,7 +6,7 @@ import MidOval from '../../image/midOval.png';
 function PageTwo() {
   return (
     <div>
-      <div className="w-full bg-blossom h-[780px]">
+      <div className="w-full bg-blossom h-[870px]">
         <div className="flex">
           <img
             className="absolute w-[200px] h-[135px] mx-[335.2px] my-16 sm:mx-[537px] md:mx-[663px] lg:mx-[973px] xl:mx-[1299px] 2xl:mx-[1914px]"
