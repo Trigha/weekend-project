@@ -3,6 +3,7 @@ import Header from './component/header';
 import PageOne from './component/pages/page1';
 import PageTwo from './component/pages/page2';
 import PageThree from './component/pages/page3';
+import Footer from './component/footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <PageOne />
       <PageTwo />
       <PageThree />
+      <Footer />
     </div>
   );
 }

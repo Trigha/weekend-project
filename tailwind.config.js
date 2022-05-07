@@ -6,6 +6,7 @@ module.exports = {
       extend: {
         colors: {
          blossom: '#EEBECE',
+         mainBlue: '#0B24FB',
         },
         layout:{
           'blueTop': {left:-377, top: 0, width: '100%', height: '100%'},

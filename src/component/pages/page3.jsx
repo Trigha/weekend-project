@@ -18,7 +18,7 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 function PageThree() {
   return (
     <div>
-      <div className="w-full h-[2000px]">
+      <div className="w-full h-vh">
         {/* slide box */}
         <div className="absolute border bg-white -my-16 mx-10 w-[247px] h-[140px]">
           <h1 className="flex justify-start my-5 mx-5 font-extrabold text-3xl font-sans ">
