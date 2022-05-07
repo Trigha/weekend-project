@@ -12,7 +12,7 @@ function PageOne() {
   return (
     <div className="w-full bg-blossom">
       <img
-        className="hidden md:block md:w-[900px] md:h-[220px] md:mx-0 xl:mx-80 z-50"
+        className="hidden md:block md:w-[900px] md:h-[220px] md:mx-0 xl:mx-80 translate-y-[109px] lg:w-[50%] laptop:w-[751.56px] laptop:h-[182.83px]"
         src={MidTop}
         alt=""
       />

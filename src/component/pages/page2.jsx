@@ -7,7 +7,7 @@ function PageTwo() {
   return (
     <div>
       <div className="w-full bg-blossom h-[870px]">
-        <div className="flex">
+        <div className="flex 2xl:-mx-0 laptop:mx-[357px]">
           <img
             className="absolute w-[200px] h-[135px] mx-[335.2px] my-16 sm:mx-[537px] md:mx-[663px] lg:mx-[919px] xl:mx-[1203px] 2xl:mx-[1558px]"
             src={Roblox}
@@ -46,7 +46,7 @@ function PageTwo() {
               </span>
             </span>
           </p>
-          <p className="text-right text-white mx-10 text-xl font-semibold italic tracking-wide font-sans -my-5 sm:mx-48 md:mx-64 lg:mx-[24rem] xl:mx-[25rem] 2xl:mx-[47.5rem] 2xl:text-2xl">
+          <p className="text-right text-white mx-10 text-xl font-semibold italic tracking-wide font-sans -my-5 sm:mx-48 md:mx-64 lg:mx-[24rem] xl:mx-[25rem] 2xl:mx-[36.5rem] 2xl:text-2xl laptop:mx-[47rem]">
             -weekend team
           </p>
         </div>
@@ -57,7 +57,7 @@ function PageTwo() {
             src={MidOval}
             alt=""
           />
-          <h1 className="absolute -my-16 mx-24 font-sans font-extrabold text-4xl text-white xl:mx-[40rem] xl:-my-20 2xl:mx-[50rem]">
+          <h1 className="absolute -my-16 mx-24 font-sans font-extrabold text-4xl text-white lg:mx-[30rem] xl:mx-[40rem] xl:-my-20 2xl:mx-[50rem] laptop:mx-[62rem]">
             Testimonial
           </h1>
         </div>
