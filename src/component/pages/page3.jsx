@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Img1 from '../../image/1.png';
 import Img2 from '../../image/2.png';
@@ -7,28 +8,52 @@ import roblox from '../../image/roblox3.png';
 import Bean from '../../image/Path5.png';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 
-// <div className="page-four">
-//     <motion.div
-//         className="page-four-content"
-//         initial={{ opacity: 0 }}
-//         animate={{ opacity: 1 }}
-//         transition={{ duration: 0.5 }}
-//     />
+const callouts = [
+  {
+    title: 'Blu Kicks',
+    subtitle:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque corrupti',
+  },
+  {
+    title: 'POV',
+    subtitle:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque corrupti',
+  },
+  {
+    title: 'SoYoung',
+    subtitle:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque corrupti',
+  },
+];
 
 function PageThree() {
+  const [width, setWidth] = useState(0);
+  const slide = useRef();
+
+  useEffect(() => {
+    setWidth(slide.current.scrollWidth - slide.current.offsetWidth);
+  }, []);
+
   return (
     <div>
       <div className="w-full h-vh">
         {/* slide box */}
-        <div className="absolute border bg-white -my-16 mx-10 w-[247px] h-[140px]">
-          <h1 className="flex justify-start my-5 mx-5 font-extrabold text-3xl font-sans ">
-            Blu Kicks
-          </h1>
-          <p className="text-left mx-6 text-[12px] leading-tight">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
-            cumque corrupti
-          </p>
-        </div>
+
+        <motion.div ref={slide} className="overflow-hidden cursor-grab mx-5">
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            className="absolute  border bg-white -my-16 mx-10 w-[247px] h-[140px]"
+          >
+            <h1 className="flex justify-start my-5 mx-5 font-extrabold text-3xl font-sans ">
+              Blu Kicks
+            </h1>
+            <p className="text-left mx-6 text-[12px] leading-tight">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </motion.div>
+        </motion.div>
+
         {/* main course */}
         <div className="flex flex-col mx-10 pt-40">
           <h1 className="text-left text-white text-4xl font-extrabold font-sans">
@@ -70,8 +95,39 @@ function PageThree() {
               className="absolute text-blue-600 text-4xl  mx-[390.5px] my-[22px]"
               width={50}
             />
+            <img
+              src={Img2}
+              alt="img"
+              className="w-full h-full object-cover pt-24"
+            />
+            <div className="-translate-y-0 border-none bg-black  h-[83px] w-full -my-[82px] opacity-50"></div>
+            <h1 className="absolute text-left text-white font-sans font-bold text-xl tracking-wide mx-6 my-3">
+              Run smoothly at vero eos et <br />
+              accusamus
+            </h1>
+            <div className="rounded-full absolute  mx-[24rem] mt-4 w-12 h-12 bg-white"></div>
+            <IoIosArrowRoundForward
+              className="absolute text-blue-600 text-4xl  mx-[390.5px] my-[22px]"
+              width={50}
+            />
+            <img
+              src={Img3}
+              alt="img"
+              className="w-full h-full object-cover pt-24"
+            />
+            <div className="-translate-y-0 border-none bg-black  h-[83px] w-full -my-[82px] opacity-50"></div>
+            <h1 className="absolute text-left text-white font-sans font-bold text-xl tracking-wide mx-6 my-3">
+              Denounce with righteous <br />
+              indignation
+            </h1>
+            <div className="rounded-full absolute  mx-[24rem] mt-4 w-12 h-12 bg-white"></div>
+            <IoIosArrowRoundForward
+              className="absolute text-blue-600 text-4xl  mx-[390.5px] my-[22px]"
+              width={50}
+            />
           </div>
-
+        </div>
+        <div className="mx-10">
           <h1 className="text-left text-white text-4xl font-extrabold font-sans mt-44">
             You're all set.
           </h1>
@@ -80,10 +136,10 @@ function PageThree() {
             principle of selection.
           </p>
         </div>
-        <div>
-          <img className="absolute pt-24 mx-5" src={roblox} alt="img" />
-          <img className="pt-36" src={Bean} alt="img" />
-        </div>
+      </div>
+      <div>
+        <img className="absolute pt-24 mx-5" src={roblox} alt="img" />
+        <img className="pt-36" src={Bean} alt="img" />
       </div>
     </div>
   );
