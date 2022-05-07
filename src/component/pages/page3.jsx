@@ -37,23 +37,25 @@ function PageThree() {
   return (
     <div>
       <div className="w-full h-vh">
-        {/* slide box */}
-
-        <motion.div ref={slide} className="overflow-hidden cursor-grab mx-5">
+        {/* slide box */}>
+        <motion.div
+          ref={slide}
+          className="overflow-hidden cursor-grab mx-5 2xl:mx-[55rem]"
+        >
           <motion.div
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
-            className="absolute  border bg-white -my-16 mx-10 w-[247px] h-[140px]"
+            className="absolute  border bg-white -my-16 mx-10 w-[300px] h-[140px] "
           >
             <h1 className="flex justify-start my-5 mx-5 font-extrabold text-3xl font-sans ">
               Blu Kicks
             </h1>
             <p className="text-left mx-6 text-[12px] leading-tight">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Places where you can leverage tools and software to free up time
+              to focus on growing the business.
             </p>
           </motion.div>
         </motion.div>
-
         {/* main course */}
         <div className="flex flex-col mx-10 pt-40">
           <h1 className="text-left text-white text-4xl font-extrabold font-sans">
