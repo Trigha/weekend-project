@@ -7,7 +7,7 @@ function PageTwo() {
   return (
     <div>
       <div className="w-full bg-blossom h-[870px]">
-        <div className="flex 2xl:-mx-0 laptop:mx-[357px]">
+        <div className="flex mx-5 md:mx-[99px] lg:mx-[88px] 2xl:-mx-0 laptop:mx-[357px]">
           <img
             className="absolute w-[200px] h-[135px] mx-[335.2px] my-16 sm:mx-[537px] md:mx-[663px] lg:mx-[919px] xl:mx-[1203px] 2xl:mx-[1558px]"
             src={Roblox}

@@ -46,7 +46,9 @@ function PageThree() {
           <motion.div
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
-            className="absolute  border bg-white -my-16 mx-10 w-[300px] h-[140px] lg:w-[250px] lg:py-0"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="absolute  border bg-white -my-16 mx-10 laptop:mx-40 w-[300px] h-[140px] lg:w-[250px] lg:py-0"
           >
             <h1 className="flex justify-start my-5 mx-5 font-extrabold text-3xl font-sans ">
               Blu Kicks
@@ -54,6 +56,38 @@ function PageThree() {
             <p className="text-left mx-6 text-[12px] leading-tight">
               Places where you can leverage tools and software to free up time
               to focus on growing the business.
+            </p>
+          </motion.div>
+
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="absolute  border bg-white -my-16 mx-10 laptop:mx-[27rem] w-[300px] h-[140px] lg:w-[250px] lg:py-0 md:hidden lg:block"
+          >
+            <h1 className="flex justify-start my-5 mx-5 font-extrabold text-3xl font-sans ">
+              Angelus
+            </h1>
+            <p className="text-left mx-6 text-[12px] leading-tight">
+              All those apps took me months to get running. Now the site
+              practically runs itself!
+            </p>
+          </motion.div>
+
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="absolute  border bg-white -my-16 mx-10 laptop:mx-[44rem] w-[300px] h-[140px] lg:w-[250px] lg:py-0 md:hidden lg:block"
+          >
+            <h1 className="flex justify-start my-5 mx-5 font-extrabold text-3xl font-sans ">
+              SoYoung
+            </h1>
+            <p className="text-left mx-6 text-[12px] leading-tight">
+              Unless you have a truly unique product, it will be very hard to
+              differentiate and gain brand traction
             </p>
           </motion.div>
         </motion.div>
@@ -100,8 +134,8 @@ function PageThree() {
           <h1 className="text-left text-white text-4xl font-extrabold font-sans mt-[67px] lg:text-center">
             Help & Tips
           </h1>
-          <div className="lg:flex lg:mx-auto lg:pt-10">
-            <div>
+          <div className="lg:flex lg:mx-auto lg:pt-10 cursor-pointer">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <img
                 src={Img1}
                 alt="img"
@@ -117,8 +151,8 @@ function PageThree() {
                 className="absolute text-blue-600 text-4xl  mx-[390.5px] my-[22px] lg:mx-64"
                 width={50}
               />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <img
                 src={Img2}
                 alt="img"
@@ -136,8 +170,8 @@ function PageThree() {
                   width={50}
                 />
               </div>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <img
                 src={Img3}
                 alt="img"
@@ -155,7 +189,7 @@ function PageThree() {
                   width={50}
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="lg:flex">
